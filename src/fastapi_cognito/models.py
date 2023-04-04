@@ -22,3 +22,13 @@ class CognitoToken(BaseModel):
     jti: str
     client_id: str
     username: str
+
+
+class CBECognitoToken(BaseModel):
+    cognito_id: str = Field(alias="sub")
+    event_id: Optional[str]
+    token_use: str
+    auth_time: int
+    iss: HttpUrl
+    exp: int
+    iat: int
