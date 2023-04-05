@@ -29,6 +29,11 @@ class CBECognitoToken(BaseModel):
     event_id: Optional[str]
     token_use: str
     auth_time: int
-    iss: HttpUrl
     exp: int
     iat: int
+    groups: List[str] = Field(alias="cognito:groups")
+    username: str = Field(alias="cognito:username")
+    debtor_number: str = Field(alias='custom:debtor_number')
+    seller_id: str = Field(alias='custom:seller_id')
+    relation_id: str = Field(alias='custom:relation_id')
+    domain: str = Field(alias='custom:domain')

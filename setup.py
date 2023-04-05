@@ -21,8 +21,13 @@ setuptools.setup(
         "Framework :: FastAPI",
         "Intended Audience :: Developers"
     ],
-    package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
+    packages=setuptools.find_packages(
+        exclude=['tests', 'tools'],
+    ),
+    package_data={
+        # Cython sources needed for tracebacks
+        "": ["*.pyx", "*.pxd", "*.pxi"],
+    },
     py_modules=["fastapi_cognito"],
     install_requires=[
         "fastapi",
