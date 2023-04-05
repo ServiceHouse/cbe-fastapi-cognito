@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="fastapi-cognito",
+    name="cbe-fastapi-cognito",
     version="2.3.0",
     author="Marko Mirosavljev",
     author_email="mirosavljevm023@gmail.com",
