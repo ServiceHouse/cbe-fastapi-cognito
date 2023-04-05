@@ -40,7 +40,6 @@ starlette==0.13.6
 toml==0.10.2
 tomli==2.0.1
 tqdm==4.59.0
-twine==4.0.1
 typing-extensions==3.7.4.3
 urllib3==1.26.4
 uvicorn==0.16.0
