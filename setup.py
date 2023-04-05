@@ -12,7 +12,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     license="MIT",
-    url="https://github.com/markomirosavljev/fastapi-cognito",
+    url="https://github.com/ServiceHouse/cbe-fastapi-cognito",
     project_urls={
     },
     classifiers=[
